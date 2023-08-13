@@ -5,6 +5,10 @@ name = "pypi"
 
 [packages]
 jupyterlab = "*"
+pandas = "*"
+geopandas = "*"
+folium = "*"
+numpy = "*"
 
 [dev-packages]
 
