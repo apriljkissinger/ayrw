@@ -33,6 +33,12 @@ export PATH="$HOME/Library/Python/3.11/bin:$PATH"
 pipenv install
 ```
 
+6. To activate this project's virtual environment, pleasse run the following.
+
+```
+pipenv shell
+```
+
 ## Run
 
 To run Jupyter Lab, please run the following.
