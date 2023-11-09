@@ -27,7 +27,7 @@ pipenv
 export PATH="$HOME/Library/Python/3.11/bin:$PATH"
 ```
 
-5. Install project dependencies. Project dependencies are specified within [Pipfile](./Pipfile).
+5. Install any known project dependencies. Project dependencies are specified within [Pipfile](./Pipfile); these two files should be creating after running the following command.
 
 ```
 pipenv install
