@@ -14,7 +14,7 @@ git clone https://github.com/apriljkissinger/ayrw.git && cd ayrw
 pip3 install pipenv --user
 ```
 
-3. Check [pipenv](https://pipenv.pypa.io/en/latest/installation/) installation. If the following command works, skip to step 4.
+3. Check [pipenv](https://pipenv.pypa.io/en/latest/installation/) installation. If the following command works, skip to step 5.
 
 ```
 pipenv
@@ -27,18 +27,30 @@ pipenv
 export PATH="$HOME/Library/Python/3.11/bin:$PATH"
 ```
 
-5. Install any known project dependencies. Project dependencies are specified within [Pipfile](./Pipfile); these two files should be creating after running the following command.
+5. Install any known project dependencies. Project dependencies are specified within [Pipfile](./Pipfile). Two files should be creating after running the following command: Pipfile and Pipfile.lock.
 
 ```
 pipenv install
 ```
 
-6. To activate this project's virtual environment, pleasse run the following.
+6. Add "jupyterlab = "*"" to the [packages] section of the Pipfile and please rerun the following command
+
+```
+pipenv install
+```  
+
+7. To activate this project's virtual environment, pleasse run the following.
 
 ```
 pipenv shell
 ```
+## Install new packages
 
+To install new packages, please run the following replacing $PACKAGE_NAME with the name of the package.
+
+```
+pipenv install $PACKAGE_NAME
+```
 ## Run
 
 To run Jupyter Lab, please run the following.
@@ -47,10 +59,4 @@ To run Jupyter Lab, please run the following.
 pipenv run jupyter lab
 ```
 
-## Install new packages
 
-To install new packages, please run the following replacing $PACKAGE_NAME with the name of the package.
-
-```
-pipenv install $PACKAGE_NAME
-```
