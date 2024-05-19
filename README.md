@@ -20,11 +20,11 @@ pip3 install pipenv --user
 pipenv
 ```
 
-4. If the `pipenv` command failed in step 3, add the following to `~/.zshrc` replacing `3.11` with your version of python. To check your version of python run `python3 --version`.
+4. If the `pipenv` command failed in step 3, add the following to `~/.zshrc` replacing `3.12` with your version of python. To check your version of python run `python3 --version`.
 
 ```
-# Add python user bin directory
-export PATH="$HOME/Library/Python/3.11/bin:$PATH"
+# Add python user bin directory to the `~/.zshrc` file. If `~/.zshrc` file does not exist, create it.
+export PATH="$HOME/Library/Python/3.12/bin:$PATH"
 ```
 
 5. Install any known project dependencies. Project dependencies are specified within [Pipfile](./Pipfile); these two files should be creating after running the following command.
